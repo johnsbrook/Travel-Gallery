@@ -62,7 +62,7 @@ const imgDenSeed = [
         date: new Date(Date.now())
     },
     {
-        description: "Pedestrian Bridge over River in Denver",
+        description: "Pedestrian Bridge Over River in Denver",
         image: "public/assets/images/denver/12.jpg",
         date: new Date(Date.now())
     }
