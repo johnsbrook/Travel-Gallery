@@ -1,0 +1,18 @@
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+.jumbotron {
+    background-color: rgb(15,155,225);
+    color: white;
+}
+.lead, .insta {
+    margin-top: -10px;
+}
+.insta, .insta:active, .insta:hover, .insta:visited {
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
