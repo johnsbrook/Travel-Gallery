@@ -10,7 +10,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./routes/html-routes")(app);
+app.use(require("./routes/html-routes"));
+app.use(require("./routes/api-routes"));
 
 mg.connect(process.env.MONGODB_URI || "mongodb://localhost/travelimages", {
     userNewUrlParser: true
