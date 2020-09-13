@@ -1,0 +1,27 @@
+{
+  "name": "travel-gallery",
+  "version": "1.0.0",
+  "description": "Travel Gallery of Colorado",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node seeders/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsbrook/Travel-Gallery.git"
+  },
+  "keywords": [
+    "travel",
+    "gallery",
+    "colorado"
+  ],
+  "author": "Ivan J. Zapata-Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsbrook/Travel-Gallery/issues"
+  },
+  "homepage": "https://github.com/johnsbrook/Travel-Gallery#readme",
+  "dependencies": {
+    "mongoose": "^5.10.5"
+  }
+}
