@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/travelimages", {
   useNewUrlParser: true
 });
 
-const imgDenSeed = [
+const imgSeed = [
     {
         description: "Valley at Rocky Mountain National Park",
         image: "public/assets/images/denver/1.jpg",
@@ -66,4 +66,15 @@ const imgDenSeed = [
         image: "public/assets/images/denver/12.jpg",
         date: new Date(Date.now())
     }
-]
+];
+
+db.Images.deleteMany({})
+  .then(() => db.Images.collection.insertMany(imgSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
